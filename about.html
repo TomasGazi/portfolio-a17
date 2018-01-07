@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomas Gazi - About</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html{
+        font-family: 'Montserrat', sans-serif;
+    }
+h1, h2, p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    h1{
+        text-decoration: overline;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+.content{
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    body{
+        margin: 0px;
+    }
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+
+}
+
+    li{
+        display: inline;
+    }
+    li a {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    padding-right: 20%;
+    text-decoration: none;
+}
+
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+li a:hover {
+    text-decoration: line-through;
+}
+li a.active {
+    text-decoration: line-through;
+}
+    #logo{
+        width: 40%;
+        margin-left: 30%;
+        border: 0px solid black;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .some{
+        width: 20px;
+        border: 0px solid black;
+    }
+
+#footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 0.7em;
+}
+#footer p.left {
+ float: left;
+}
+
+#footer p.right {
+ float: right;
+}
+* {box-sizing: border-box;}
+body {font-family: 'Montserrat', sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 1px;
+  width: 1px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+.heading{
+background: url(images/bg8.png) no-repeat center center;
+    }
+img{
+        border: 3px solid black;
+    }
+@media screen and (min-width: 500px){
+.heading{
+background: url(images/bg7.png) no-repeat center center;
+    }
+#myinfo { grid-area: myinfo; }
+#we { grid-area: we; }
+#edu { grid-area: edu; }
+#vse { grid-area: vse; }
+#exp { grid-area: exp; }
+#film { grid-area: film; }
+#hobby { grid-area: hobby; }
+.slideshow-container { grid-area: slideshow; }
+
+.content {
+  display: grid;
+  grid-template-areas:
+    'myinfo we'
+    'vse edu'
+    'exp film'
+    'slideshow hobby';
+  grid-gap: 0;
+  padding: 0px;
+}
+.content{
+    margin-left: 20%;
+    margin-right: 20%;
+    }
+#logo{
+        width: 10%;
+        margin-left: 45%;
+        border: 0px solid black;
+    }
+    .some{
+        width: 30px;
+    }
+
+#footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 1rem;
+  padding-bottom: 16px;
+  text-align: center;
+  font-size: 1em;
+}
+h1, h2, p{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    }
+h1{
+        text-decoration: overline;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+    }
+    #exp{
+        text-align: right;
+            background: url(images/bg4.png) no-repeat center center;
+    }
+    #edu{
+            background: url(images/bg5.png) no-repeat center center;
+    }
+    #hobby{
+            background: url(images/bg6.png) no-repeat center center;
+    }
+}
+</style>
+</head>
+<div class="heading"><a href="home.html"><img id="logo" src="images/tglogo.png"></a>
+    <nav>
+				<ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+				</ul>
+			</nav></div>
+<body>
+    <div class="content"><div id="myinfo"><p>My name is Tomas Gazi, I'm 25 years old from Kosice, Slovakia. Right after graduation, I started studying corporate economy at University of Economics in Prague, where I gained my bachelor degree. Economy wasn't my cup of tea, so I have decided that I want to study something, I am more passionate about. While studying in Prague, I was also working as multimedia editor for skateboarding magazine called Board. This job gave me a lot of experience with social media, video, photography and team work. After visiting Copenhagen in summer 2016, I have decided, that this is the place, I want to be. KEA was the right reason to come here together with my lovely girlfriend Eliska and Jack Russell Terrier called Jackie.</p></div>
+    <div id="we"><img src="images/print-30_20.jpg" style="width:100%"></div>
+    <div id="edu"><h1>Education</h1>
+    <h2>Gymnazium Opatovska, Kosice, Slovakia</h2>
+    <p>2008-2012</p>
+    <p>High School</p>
+    <h2>University of Economics in Prague</h2>
+    <p>2012-2017</p>
+    <p>Bachelor degree in Business Administration and management</p>
+    <h2>Copenhagen School of Design and Technology</h2>
+    <p>2017-present</p>
+    <p>Multimedia design and communication</p></div>
+    <div id="vse"><img src="images/00000300.jpg" style="width:100%"></div>
+    <div id="exp"><h1>Work experience</h1>
+    <h2>Multimedia editor</h2>
+    <p>2012-2015</p>
+    <p>Board magazine</p>
+    <h2>Chief editor</h2>
+    <p>2015-2017</p>
+    <p>Board magazine</p>
+    <h2>Event cinematographer</h2>
+    <p>2012-2017</p>
+    <p>Vans, Footshop.cz</p></div>
+    <div id="film"><img src="images/me_1000x1000.jpg" style="width:100%"></div>
+    <div id="hobby"><h1>Interests</h1>
+    <h2>Cinematography</h2>
+    <h2>Photography</h2>
+    <h2>Skateboarding</h2>
+    <h2>Travelling</h2></div>
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/slideshow/1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slideshow/5.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div></div>
+<div id="footer">
+   <p class="left">Copyright © Tomas Gazi 2017</p>
+   <p class="right"><a href="https://www.facebook.com/tomas.b.gazi" target="_blank"><img class="some" src="images/fbicon.png"></a>
+<a href="https://www.instagram.com/bugatr0n/" target="_blank"><img class="some" src="images/instaicon.png"></a>
+<a href="http://bugatr0n.tumblr.com" target="_blank"><img class="some" src="images/tumblricon.png"></a>
+<a href="https://github.com/TomasGazi" target="_blank"><img class="some" src="images/githubicon.png"></a></p>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomas Gazi - Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    }
+h1{
+    font-size: 1.5em;
+    margin-bottom: 4px;
+
+    }
+h2{
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    text-decoration: underline;
+    color: black;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background: url(images/bg1.png) no-repeat center center;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatetop;
+    animation-duration: 0.7s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:20px; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:20px; opacity:1}
+}
+
+/* The Modal (background) */
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content2 {
+    position: relative;
+    background: url(images/bg2.png) no-repeat center center;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatetop;
+    animation-duration: 0.7s
+}
+
+/* The Modal (background) */
+.modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content3 {
+    position: relative;
+    background: url(images/bg3.png) no-repeat center center;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatetop;
+    animation-duration: 0.7s
+}
+
+/* The Modal (background) */
+.modal4 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content4 {
+    position: relative;
+    background: url(images/bg4.png) no-repeat center center;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    top: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatetop;
+    animation-duration: 0.7s
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The Close Button */
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close4 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.heading{
+background: url(images/bg8.png) no-repeat center center;
+    }
+html{
+background: url(images/8s.png) no-repeat center center fixed;
+    }
+body{
+    margin: 0px;
+}
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+li{
+    display: inline;
+}
+li a {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    padding-right: 20%;
+    text-decoration: none;
+}
+
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+}
+nav a:hover{
+    text-decoration: line-through;
+}
+
+#icon1:hover{
+    opacity: 0.75;
+    }
+
+#icon2:hover{
+    opacity: 0.75;
+    }
+
+#icon3:hover{
+    opacity: 0.75;
+    }
+
+#icon4:hover{
+    opacity: 0.75;
+    }
+
+#logo{
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+.some{
+    width: 20px;
+    }
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+#footer p.left {
+ float: left;
+}
+
+#footer p.right {
+ float: right;
+}
+
+#icon1 { grid-area: icon1; }
+#icon2 { grid-area: icon2; }
+#icon3 { grid-area: icon3; }
+#icon4 { grid-area: icon4; }
+
+
+.icons {
+  display: grid;
+  grid-template-areas:
+    'icon1 icon2'
+    'icon3 icon4';
+  grid-gap: 50px;
+  padding: 0;
+}
+.icons{
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    }
+    .icons:hover{
+        cursor: pointer;
+    }
+img{
+  width: 100%;
+    }
+@media screen and (min-width: 500px){
+.heading{
+background: url(images/bg7.png) no-repeat center center;
+    }
+html{
+background: url(images/8.png) no-repeat center center fixed;
+    }
+img{
+  width: 100%;
+    }
+.icons{
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    position: relative;
+    }
+.some{
+    width: 30px;
+    }
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 1em;
+}
+#logo{
+    width: 10%;
+    margin-left: 45%;
+    }
+#icon1 { grid-area: icon1; }
+#icon2 { grid-area: icon2; }
+#icon3 { grid-area: icon3; }
+#icon4 { grid-area: icon4; }
+
+
+.icons {
+  display: grid;
+  grid-template-areas:
+    'icon1 icon2'
+    'icon3 icon4';
+  grid-gap: 50px;
+  padding: 0;
+}
+.modal-content {
+    width: 50%;
+    margin-top: 0;
+    padding-left: 30px;
+    }
+.modal-content2 {
+    width: 50%;
+    margin-top: 0;
+    padding-left: 30px;
+
+    }
+.modal-content3 {
+    width: 50%;
+    margin-top: 0;
+    padding-left: 30px;
+
+    }
+.modal-content4 {
+    width: 50%;
+    margin-top: 0;
+    padding-left: 30px;
+
+    }
+h1{
+    font-size: 2em;
+    margin-bottom: 7px;
+
+    }
+h2{
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+p{
+    font-size: 1em;
+    }
+}
+
+</style>
+</head>
+<div class="heading"><a href="home.html"><img id="logo" src="images/tglogo.png"></a>
+<nav>
+				<ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+				</ul>
+    </nav></div>
+<body>
+<div class="icons">
+<div id="icon1"><img id="myBtn" src="images/icon4.png"></div>
+<div id="icon2"><img id="myBtn2" src="images/icon1.png"></div>
+<div id="icon3"><img id="myBtn3" src="images/icon2.png"></div>
+<div id="icon4"><img id="myBtn4" src="images/icon3.png"></div>
+</div>
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h1>THEME 1: Basic Web Design</h1>
+<a href="http://tomasgazi.com/kea/01-web/responsive/home.html" target="_blank"><h2>01.04.01. Responsive website</h2></a>
+<a href="http://www.misschili.net/kea/redesign/"><h2>01.05.03. Link to redesigned web site</h2></a>
+<a href="http://tomasgazi.com/hand-ins/pres-redesign.pdf" target="_blank"><h2>01.05.04. Presentation</h2></a>
+</div>
+</div>
+
+<div id="myModal2" class="modal2">
+<div class="modal-content2">
+<span class="close2">&times;</span>
+<h1>THEME 2: Basic Animation</h1>
+<a href="http://tomasgazi.com/kea/02-animation/JS1/index.html" target="_blank"><h2>02.01.02 Link to simple animation</h2></a>
+<a href="http://tomasgazi.com/hand-ins/style-tile.pdf" target="_blank"><h2>02.02.01 Style tile & Story idea</h2></a>
+<a href="http://tomasgazi.com/hand-ins/story-work-sheet.pdf" target="_blank"><h2>02.02.02 Story board & Work sheet</h2></a>
+<a href="http://tomasgazi.com/kea/02-animation/animation/animation.html" target="_blank"><h2>02.02.03 link Sprite sheet animation</h2></a>
+<a href="http://tomasgazi.com/kea/02-animation/harry-potter/harrypotter.html" target="_blank"><h2>02.03.02. Interactive Animation</h2></a>
+<a href="http://rtsdr.com/kea/02-animation/2.3.3-project-pool-1/" target="_blank"><h2>02.03.03. ProjectPool day 1</h2></a>
+<a href="http://tomasgazi.com/kea/02-animation/project-pool-2/slide.html" target="_blank"><h2>02.03.04. ProjectPool day 2</h2></a>
+<a href="http://tomasgazi.com/hand-ins/personas-collage.pdf" target="_blank"><h2>02.04.02. Personas collage</h2></a>
+<a href="http://tomasgazi.com/hand-ins/storyboard_group15.pdf" target="_blank"><h2>02.04.03. Storyboard</h2></a>
+<a href="http://tomasgazi.com/hand-ins/group-15_expert-test.pdf" target="_blank"><h2>02.04.04. Summary of expert test</h2></a>
+<a href="http://tomasgazi.com/hand-ins/baresogifko.gif" target="_blank"><h2>02.05.01. Gif animation using AI+PS</h2></a>
+<a href="http://tomasgazi.com/hand-ins/rizo.gif" target="_blank"><h2>02.05.02. Gif animation using AI+PS</h2></a>
+</div>
+</div>
+
+<div id="myModal3" class="modal3">
+<div class="modal-content3">
+<span class="close3">&times;</span>
+<h1>THEME 4: Basic UX</h1>
+<a href="http://tomasgazi.com/hand-ins/business-canvas.JPG" target="_blank"><h2>04.02.01: Business Model Canvas</h2></a>
+<a href="http://tomasgazi.com/hand-ins/report-viewfinder.pdf" target="_blank"><h2>04.02.02: Report</h2></a>
+<a href="http://tomasgazi.com/hand-ins/design-doc.pdf" target="_blank"><h2>04.03.01: Design documentation</h2></a>
+<a href="http://www.misschili.net/kea/viewfinders/index.html" target="_blank"><h2>04.04.01: Link to the web prototype</h2></a>
+<a href="http://tomasgazi.com/hand-ins/pitch-viewfinders.pdf" target="_blank"><h2>04.04.02: Pitch presentation</h2></a>
+</div>
+</div>
+
+<div id="myModal4" class="modal4">
+<div class="modal-content4">
+<span class="close4">&times;</span>
+<h1>THEME 3: Basic Video</h1>
+<a href="https://www.youtube.com/watch?v=3tbss81KZZQ" target="_blank"><h2>03.01.01: A story told with moving images</h2></a>
+<a href="http://tomasgazi.com/hand-ins/storyboard.pdf" target="_blank"><h2>03.02.01: Storyboard</h2></a>
+<a href="http://radovesely.com/kea/story/" target="_blank"><h2>03.02.02: City Walk and Meetup</h2></a>
+<a href="https://vimeo.com/235337688" target="_blank"><h2>03.03.01: Skateboarding video from Copenhagen</h2></a>
+</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Get the modal
+var modal2 = document.getElementById('myModal2');
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+
+
+// Get the modal
+var modal3 = document.getElementById('myModal3');
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+
+// Get the modal
+var modal4 = document.getElementById('myModal4');
+
+// Get the button that opens the modal
+var btn4 = document.getElementById("myBtn4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close4")[0];
+
+// When the user clicks the button, open the modal
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal4.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+<div id="footer">
+   <p class="left">Copyright © Tomas Gazi 2017</p>
+   <p class="right"><a href="https://www.facebook.com/tomas.b.gazi" target="_blank"><img class="some" src="images/fbicon.png"></a>
+<a href="https://www.instagram.com/bugatr0n/" target="_blank"><img class="some" src="images/instaicon.png"></a>
+<a href="http://bugatr0n.tumblr.com" target="_blank"><img class="some" src="images/tumblricon.png"></a>
+<a href="https://github.com/TomasGazi" target="_blank"><img class="some" src="images/githubicon.png"></a></p>
+  </div>
+</html>
